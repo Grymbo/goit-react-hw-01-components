@@ -1,5 +1,5 @@
 
-const Profile = ({username, tag, avatar, location, followers, views, likes,}) => {
+const Profile = ({username, tag, avatar, location, followers, views, likes}) => {
     return (
         <div class="profile">
             <div class="description">
