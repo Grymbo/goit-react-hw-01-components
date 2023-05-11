@@ -24,7 +24,9 @@ function App() {
         data={data}
       />
 
-      <FriendList/>
+      <FriendList
+        friends={friends}
+      />
     </>
     
   )  

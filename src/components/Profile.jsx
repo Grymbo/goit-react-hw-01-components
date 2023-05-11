@@ -2,35 +2,35 @@ import '../styles/profile.css'
 
 const Profile = ({username, tag, avatar, location, followers, views, likes}) => {
     return (
-        <div class="profile">
-            <div class="description">
+        <div className="profile">
+            <div className="description">
                 <img
                     src={avatar}
                     alt="User avatar"
-                    class="avatar"
+                    className="avatar"
                 />
                 
-                <p class="name">{username}</p>
+                <p className="name">{username}</p>
     
-                <p class="tag">@{tag}</p>
+                <p className="tag">@{tag}</p>
                 
-                <p class="location">{location}</p>
+                <p className="location">{location}</p>
             </div>
 
-            <ul class="stats">
-                <li class="statsLi">
-                    <span class="label">Followers</span>
-                    <span class="quantity">{followers}</span>
+            <ul className="stats">
+                <li className="statsLi">
+                    <span className="label">Followers</span>
+                    <span className="quantity">{followers}</span>
                 </li>
     
                 <li class="statsLi">
-                    <span class="label">Views</span>
-                    <span class="quantity">{views}</span>
+                    <span className="label">Views</span>
+                    <span className="quantity">{views}</span>
                 </li>
     
                 <li class="statsLi">
-                    <span class="label">Likes</span>
-                    <span class="quantity">{likes}</span>
+                    <span className="label">Likes</span>
+                    <span className="quantity">{likes}</span>
                 </li>
             </ul>
         </div>
