@@ -1,3 +1,4 @@
+import '../styles/statistics.css'
 
 const Statistics = ({data}) => {
     return (
