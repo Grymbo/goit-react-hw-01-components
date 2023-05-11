@@ -3,6 +3,8 @@ import Profile from './components/Profile'
 import Statistics from './components/Statistics'
 import user from './JSON/user.json'
 import data from './JSON/data.json'
+import friends from './JSON/friends.json'
+import FriendList from './components/FriendList'
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
       <Statistics  
         data={data}
       />
+
+      <FriendList/>
     </>
     
   )  

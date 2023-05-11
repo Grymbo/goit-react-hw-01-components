@@ -1,3 +1,4 @@
+import '../styles/profile.css'
 
 const Profile = ({username, tag, avatar, location, followers, views, likes}) => {
     return (
@@ -17,17 +18,17 @@ const Profile = ({username, tag, avatar, location, followers, views, likes}) => 
             </div>
 
             <ul class="stats">
-                <li>
+                <li class="statsLi">
                     <span class="label">Followers</span>
                     <span class="quantity">{followers}</span>
                 </li>
     
-                <li>
+                <li class="statsLi">
                     <span class="label">Views</span>
                     <span class="quantity">{views}</span>
                 </li>
     
-                <li>
+                <li class="statsLi">
                     <span class="label">Likes</span>
                     <span class="quantity">{likes}</span>
                 </li>

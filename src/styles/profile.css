@@ -1,0 +1,56 @@
+.profile {
+    margin: 15px auto;
+    padding: 0.1px;
+    background-color: white;
+    max-width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.profile .description {
+    padding: 15px;
+}
+
+.profile .label {
+    color: #A4AEB9;
+}
+
+.profile p {
+    padding: 5px;
+
+}
+
+.avatar {
+    margin: auto;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.stats {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: solid 1px #E9EDF3;
+    background-color: #F3F6F9;
+    max-width: 100%;
+    gap: 7px;
+    
+}
+.statsLi{
+    display: flex;
+    flex-direction: column;
+    border-right: solid #E9EDF3;
+    padding: 7px;
+}
+.statsLi:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.statsLi:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.statsLi:nth-child(3) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
