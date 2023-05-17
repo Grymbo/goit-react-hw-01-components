@@ -1,4 +1,5 @@
 import '../styles/transactionHistory.css'
+import PropTypes from "prop-types";
 
 const TransactionHistory = ({transactions}) => {
   return (
@@ -24,6 +25,10 @@ const TransactionHistory = ({transactions}) => {
         </table>
     </div>
   )
+}
+
+TransactionHistory.prototypes = {
+    transactions : PropTypes.object.isRequired,
 }
 
 export default TransactionHistory

@@ -1,4 +1,5 @@
 import '../styles/profile.css'
+import PropTypes from "prop-types";
 
 const Profile = ({username, tag, avatar, location, followers, views, likes}) => {
     return (
@@ -23,12 +24,12 @@ const Profile = ({username, tag, avatar, location, followers, views, likes}) => 
                     <span className="quantity">{followers}</span>
                 </li>
     
-                <li class="statsLi">
+                <li className="statsLi">
                     <span className="label">Views</span>
                     <span className="quantity">{views}</span>
                 </li>
     
-                <li class="statsLi">
+                <li className="statsLi">
                     <span className="label">Likes</span>
                     <span className="quantity">{likes}</span>
                 </li>
@@ -36,5 +37,13 @@ const Profile = ({username, tag, avatar, location, followers, views, likes}) => 
         </div>
     )
 }
+
+Profile.prototypes = {
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.object.isRequired,
+  };
 
 export default Profile

@@ -1,4 +1,5 @@
 import '../styles/statistics.css'
+import PropTypes from "prop-types";
 
 const Statistics = ({data}) => {
     return (
@@ -17,5 +18,9 @@ const Statistics = ({data}) => {
       </section>
   )
 }
+
+Statistics.prototypes = {
+  data: PropTypes.object.isRequired,
+};
 
 export default Statistics
